@@ -65,7 +65,7 @@ U 1 1 5D0CC97E
 P 5850 1575
 F 0 "Q1" H 6050 1650 50  0000 L CNN
 F 1 "BC549" H 6050 1575 50  0000 L CNN
-F 2 "TO_SOT_Packages_THT:TO-92_Molded_Narrow" H 6050 1500 50  0001 L CIN
+F 2 "TO_SOT_Packages_THT:TO-92_Inline_Wide" H 6050 1500 50  0001 L CIN
 F 3 "" H 5850 1575 50  0001 L CNN
 	1    5850 1575
 	1    0    0    -1  
@@ -81,7 +81,7 @@ F 1 "3k3" V 5575 1350 50  0000 C CNN
 F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 5505 1350 50  0001 C CNN
 F 3 "" H 5575 1350 50  0001 C CNN
 	1    5575 1350
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
 L R R3
@@ -147,7 +147,7 @@ F 1 "150pF" V 5200 1925 50  0000 C CNN
 F 2 "Capacitors_THT:C_Disc_D4.7mm_W2.5mm_P5.00mm" H 5300 1925 50  0001 C CNN
 F 3 "" H 5300 1925 50  0001 C CNN
 	1    5300 1925
-	-1   0    0    1   
+	1    0    0    -1  
 $EndComp
 Connection ~ 5300 1575
 Wire Wire Line
@@ -206,7 +206,7 @@ U 1 1 5D0CE09E
 P 5175 3700
 F 0 "Q2" H 5375 3775 50  0000 L CNN
 F 1 "BC549" H 5375 3700 50  0000 L CNN
-F 2 "TO_SOT_Packages_THT:TO-92_Molded_Narrow" H 5375 3625 50  0001 L CIN
+F 2 "TO_SOT_Packages_THT:TO-92_Inline_Wide" H 5375 3625 50  0001 L CIN
 F 3 "" H 5175 3700 50  0001 L CNN
 	1    5175 3700
 	1    0    0    -1  
@@ -505,7 +505,6 @@ Text GLabel 3225 6550 1    60   Input ~ 0
 CHROMA_OUT
 Wire Wire Line
 	3225 6550 3225 6625
-NoConn ~ 3125 6625
 $Comp
 L RCA_PLUG J6
 U 1 1 5D0D8017
@@ -580,7 +579,7 @@ F 1 "AUD_SEL" H 9210 1790 50  0000 C CNN
 F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 9200 1850 50  0001 C CNN
 F 3 "" H 9200 1850 50  0001 C CNN
 	1    9200 1850
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 Wire Wire Line
 	9700 1950 10075 1950
@@ -589,7 +588,7 @@ L Jumper_NC_Dual JP2
 U 1 1 5D0E13BF
 P 9700 2200
 F 0 "JP2" H 9750 2100 50  0000 L CNN
-F 1 "AUD_JOIN" H 9700 2300 50  0000 C BNN
+F 1 "AUD_MONO" H 9700 2300 50  0000 C BNN
 F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 9700 2200 50  0001 C CNN
 F 3 "" H 9700 2200 50  0001 C CNN
 	1    9700 2200
@@ -611,32 +610,129 @@ Wire Wire Line
 Wire Wire Line
 	10025 2575 9900 2575
 $Comp
-L Conn_01x02 J7
-U 1 1 5D0E39F8
-P 2500 6550
-F 0 "J7" H 2500 6650 50  0000 C CNN
-F 1 "M_Upper" H 2500 6350 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 2500 6550 50  0001 C CNN
-F 3 "" H 2500 6550 50  0001 C CNN
-	1    2500 6550
-	-1   0    0    1   
-$EndComp
-$Comp
 L GND #PWR08
 U 1 1 5D0E3D58
-P 2775 6625
-F 0 "#PWR08" H 2775 6375 50  0001 C CNN
-F 1 "GND" H 2775 6475 50  0000 C CNN
-F 2 "" H 2775 6625 50  0001 C CNN
-F 3 "" H 2775 6625 50  0001 C CNN
-	1    2775 6625
+P 1975 6625
+F 0 "#PWR08" H 1975 6375 50  0001 C CNN
+F 1 "GND" H 1975 6475 50  0000 C CNN
+F 2 "" H 1975 6625 50  0001 C CNN
+F 3 "" H 1975 6625 50  0001 C CNN
+	1    1975 6625
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2700 6550 2775 6550
-Wire Wire Line
-	2775 6450 2775 6625
-Wire Wire Line
-	2775 6450 2700 6450
+	1575 6550 3125 6550
 Connection ~ 2775 6550
+$Comp
+L Conn_01x01 J9
+U 1 1 5D13434E
+P 1975 6275
+F 0 "J9" H 1975 6375 50  0000 C CNN
+F 1 " " V 1875 6250 50  0001 C CNN
+F 2 "anchors:anchor_circle" H 1975 6275 50  0001 C CNN
+F 3 "" H 1975 6275 50  0001 C CNN
+	1    1975 6275
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3125 6550 3125 6625
+$Comp
+L Conn_01x01 J8
+U 1 1 5D134A37
+P 1775 6275
+F 0 "J8" H 1775 6375 50  0000 C CNN
+F 1 " " V 1675 6250 50  0001 C CNN
+F 2 "anchors:anchor_circle" H 1775 6275 50  0001 C CNN
+F 3 "" H 1775 6275 50  0001 C CNN
+	1    1775 6275
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Conn_01x01 J7
+U 1 1 5D134AB1
+P 1575 6275
+F 0 "J7" H 1575 6375 50  0000 C CNN
+F 1 " " V 1475 6250 50  0001 C CNN
+F 2 "anchors:anchor_circle" H 1575 6275 50  0001 C CNN
+F 3 "" H 1575 6275 50  0001 C CNN
+	1    1575 6275
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1575 6550 1575 6475
+Wire Wire Line
+	1775 6475 1775 6550
+Connection ~ 2575 6550
+$Comp
+L Conn_01x01 J10
+U 1 1 5D136252
+P 2175 6275
+F 0 "J10" H 2175 6375 50  0000 C CNN
+F 1 " " V 2075 6250 50  0001 C CNN
+F 2 "anchors:anchor_circle" H 2175 6275 50  0001 C CNN
+F 3 "" H 2175 6275 50  0001 C CNN
+	1    2175 6275
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2175 6475 2175 6550
+Connection ~ 2975 6550
+Connection ~ 2175 6550
+$Comp
+L Conn_01x01 J12
+U 1 1 5D1368FD
+P 2575 6275
+F 0 "J12" H 2575 6375 50  0000 C CNN
+F 1 " " V 2475 6250 50  0001 C CNN
+F 2 "anchors:anchor_circle" H 2575 6275 50  0001 C CNN
+F 3 "" H 2575 6275 50  0001 C CNN
+	1    2575 6275
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Conn_01x01 J11
+U 1 1 5D136903
+P 2375 6275
+F 0 "J11" H 2375 6375 50  0000 C CNN
+F 1 " " V 2275 6250 50  0001 C CNN
+F 2 "anchors:anchor_circle" H 2375 6275 50  0001 C CNN
+F 3 "" H 2375 6275 50  0001 C CNN
+	1    2375 6275
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2575 6475 2575 6550
+Connection ~ 1775 6550
+Wire Wire Line
+	2375 6475 2375 6550
+Connection ~ 2375 6550
+$Comp
+L Conn_01x01 J14
+U 1 1 5D13747C
+P 2975 6275
+F 0 "J14" H 2975 6375 50  0000 C CNN
+F 1 " " V 2875 6250 50  0001 C CNN
+F 2 "anchors:anchor_circle" H 2975 6275 50  0001 C CNN
+F 3 "" H 2975 6275 50  0001 C CNN
+	1    2975 6275
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Conn_01x01 J13
+U 1 1 5D137482
+P 2775 6275
+F 0 "J13" H 2775 6375 50  0000 C CNN
+F 1 " " V 2675 6250 50  0001 C CNN
+F 2 "anchors:anchor_circle" H 2775 6275 50  0001 C CNN
+F 3 "" H 2775 6275 50  0001 C CNN
+	1    2775 6275
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2975 6475 2975 6550
+Wire Wire Line
+	2775 6475 2775 6550
+Wire Wire Line
+	1975 6475 1975 6625
+Connection ~ 1975 6550
 $EndSCHEMATC
