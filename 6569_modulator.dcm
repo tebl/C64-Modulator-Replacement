@@ -1,0 +1,15 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP 6569_4321
+D Generic connector, single row, 01x04
+K connector
+F ~
+$ENDCMP
+#
+$CMP 6569_8765
+D Generic connector, single row, 01x04
+K connector
+F ~
+$ENDCMP
+#
+#End Doc Library
