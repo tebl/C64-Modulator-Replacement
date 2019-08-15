@@ -1,4 +1,4 @@
-update=08/08/2019 01:11:34
+update=15/08/2019 15:22:32
 version=1
 last_client=kicad
 [pcbnew]
@@ -33,8 +33,6 @@ NetFmtName=
 SpiceForceRefPrefix=0
 SpiceUseNetNumbers=0
 LabSize=60
-[general]
-version=1
 [eeschema]
 version=1
 LibDir=
@@ -74,3 +72,5 @@ LibName32=valves
 LibName33=rca_plug
 LibName34=trs_3.5mm
 LibName35=6569_modulator
+[general]
+version=1
