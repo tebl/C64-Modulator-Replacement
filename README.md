@@ -1,1 +1,3 @@
-C64 Modulator
+# C64 Modulator Replacement, "Longboard" edition
+
+Based on the C64 RF-modulator mod by Zero-X / OMS, this adapts those schematics to create a complete replacement for the original modulator including a few changes of my own. Gone is the old RF-signal and the noise it provides, added is options for bypassing some of the problematic signals as well as a connector for adding a stereo audio output. Given differences in pinouts, this variant is meant for installation only on Commodore 64s with "longboards".
