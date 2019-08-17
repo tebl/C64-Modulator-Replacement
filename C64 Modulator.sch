@@ -813,23 +813,23 @@ $EndComp
 Wire Wire Line
 	10200 3800 10200 3875
 $Comp
-L CP_Small C?
+L CP_Small C8
 U 1 1 5D556521
 P 9800 1800
-F 0 "C?" H 9810 1870 50  0000 L CNN
+F 0 "C8" H 9810 1870 50  0000 L CNN
 F 1 "10uF" H 9810 1720 50  0000 L CNN
-F 2 "" H 9800 1800 50  0001 C CNN
+F 2 "Capacitors_THT:CP_Radial_D5.0mm_P2.50mm" H 9800 1800 50  0001 C CNN
 F 3 "" H 9800 1800 50  0001 C CNN
 	1    9800 1800
 	0    -1   -1   0   
 $EndComp
 $Comp
-L CP_Small C?
+L CP_Small C9
 U 1 1 5D556B7D
 P 9825 2000
-F 0 "C?" H 9835 2070 50  0000 L CNN
+F 0 "C9" H 9835 2070 50  0000 L CNN
 F 1 "10uF" H 9835 1920 50  0000 L CNN
-F 2 "" H 9825 2000 50  0001 C CNN
+F 2 "Capacitors_THT:CP_Radial_D5.0mm_P2.50mm" H 9825 2000 50  0001 C CNN
 F 3 "" H 9825 2000 50  0001 C CNN
 	1    9825 2000
 	0    -1   -1   0   
@@ -860,16 +860,16 @@ U 1 1 5D55784F
 P 9125 2575
 F 0 "J4" H 9125 2675 50  0000 C CNN
 F 1 "SID#2" H 9125 2375 50  0000 C CNN
-F 2 "" H 9125 2575 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 9125 2575 50  0001 C CNN
 F 3 "" H 9125 2575 50  0001 C CNN
 	1    9125 2575
 	-1   0    0    -1  
 $EndComp
 $Comp
-L GND #PWR?
+L GND #PWR011
 U 1 1 5D55B688
 P 9450 2750
-F 0 "#PWR?" H 9450 2500 50  0001 C CNN
+F 0 "#PWR011" H 9450 2500 50  0001 C CNN
 F 1 "GND" H 9450 2600 50  0000 C CNN
 F 2 "" H 9450 2750 50  0001 C CNN
 F 3 "" H 9450 2750 50  0001 C CNN
@@ -886,9 +886,15 @@ U 1 1 5D55EB7A
 P 8975 4400
 F 0 "C4" H 8985 4470 50  0000 L CNN
 F 1 "10uF" H 8985 4320 50  0000 L CNN
-F 2 "" H 8975 4400 50  0001 C CNN
+F 2 "Capacitors_THT:CP_Radial_D5.0mm_P2.50mm" H 8975 4400 50  0001 C CNN
 F 3 "" H 8975 4400 50  0001 C CNN
 	1    8975 4400
 	1    0    0    -1  
 $EndComp
+Text Notes 7000 6950 0    60   ~ 0
+Based on the C64 RF-modulator mod by Zero-X / OMS, this simply adapts those\nschematics with changes of my own to create a complete replacement for the\nmodulator. Given differences in pinouts this variant is meant for installation only on\nCommodore 64s with "longboards".
+Text Notes 7350 7500 0    60   ~ 0
+C64 Modulator replacement, "Longboard" edition
+Text Notes 10550 7650 0    60   ~ 0
+B
 $EndSCHEMATC
