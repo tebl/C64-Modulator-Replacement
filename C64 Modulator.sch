@@ -854,5 +854,5 @@ Based on the C64 RF-modulator mod by Zero-X / OMS, this simply adapts those\nsch
 Text Notes 7350 7500 0    60   ~ 0
 C64 Modulator replacement, "Longboard" edition
 Text Notes 10550 7650 0    60   ~ 0
-B
+C
 $EndSCHEMATC
